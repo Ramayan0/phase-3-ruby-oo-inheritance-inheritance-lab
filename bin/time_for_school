@@ -13,8 +13,30 @@ avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
 
-some_knowledge = avi.teach 
+some_knowledge = avi.teach
 
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name ="Jim"
+jim.last_name = "Doe"
+# calling learn on jim will promp error since it doesnt have access to it
+# jim.learn
+
+# example 2
+remy = Student.new
+remy.first_name = "Remy"
+remy.last_name = "Hassan"
+
+avi = Teacher.new
+avi.first_name = "Avi"
+avi.last_name = "Flombaum"
+
+
+some_knowledge = avi.teach
+
+steve.learn(some_knowledge)
+
+puts "Remy just learned this important knowledge: '#{remy.knowledge.first}' from Avi"
